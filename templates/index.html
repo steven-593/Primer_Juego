@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Tres en Raya</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Juego: Tres en Raya</h1>
+        <p id="mensaje">Turno de X</p>
+
+        <div class="tablero">
+            <div class="celda" data-index="0"></div>
+            <div class="celda" data-index="1"></div>
+            <div class="celda" data-index="2"></div>
+            <div class="celda" data-index="3"></div>
+            <div class="celda" data-index="4"></div>
+            <div class="celda" data-index="5"></div>
+            <div class="celda" data-index="6"></div>
+            <div class="celda" data-index="7"></div>
+            <div class="celda" data-index="8"></div>
+        </div>
+
+        <button id="reiniciar">🔄 Reiniciar</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
